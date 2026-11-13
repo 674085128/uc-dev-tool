@@ -55,7 +55,7 @@ def main() -> int:
 
     print(f"[!] 发现新版本 {remote}，正在更新...")
     result = subprocess.run(
-        ["git", "-C", str(REPO_DIR), "pull", "--ff-only"],
+        ["git", "-C", str(REPO_DIR), "pull", "--ff-only", "origin", BRANCH],
         capture_output=True,
         text=True,
     )

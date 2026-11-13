@@ -17,6 +17,16 @@ Claude 开发 UC 时，如果不了解这个系统的约定，会犯这些错：
 
 把这 5 个 skill 目录复制到 Claude 的 skills 目录即可。每个 skill 就是一个文件夹，里面一个 `SKILL.md`。
 
+## 自更新
+
+`update.py` 脚本会对比本地 `VERSION` 和 GitHub 远程 `VERSION`，发现新版就自动 `git pull` 更新：
+
+```bash
+python update.py
+```
+
+原理就是"每次对话检查最新版本自动更新"的三步：读版本号 → 对比 → 拉取。注意：Claude 宿主没有"每次对话自动跑脚本"的钩子，所以需要你定期手动运行一次（或加进定时任务）。
+
 ## 包含的 skill
 
 | skill | 作用 | 何时触发 |
