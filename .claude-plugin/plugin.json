@@ -1,0 +1,11 @@
+{
+  "name": "uc-dev-tool",
+  "version": "1.0.0",
+  "description": "辅助开发 UC 电商系统的开发助手插件：沉淀系统架构、业务概念、核心流程、开发规范和踩坑清单，让 AI 在开发 UC 时少犯错",
+  "author": {
+    "name": "ff"
+  },
+  "license": "MIT",
+  "keywords": ["uc", "ecommerce", "开发助手"],
+  "skills": ["./skills"]
+}
